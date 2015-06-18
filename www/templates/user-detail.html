@@ -1,0 +1,21 @@
+<ion-view view-title="{{user.name}}">
+	<ion-content class="padding">
+		<div class="list card">
+			<div class="item item-avatar">
+				<img ng-src="{{ user.avatar }}">
+
+				<h2>{{ user.name }}</h2>
+
+				<p>{{ user.nickname }}</p>
+			</div>
+
+			<div class="item item-image">
+				<img ng-src="{{ user.avatar }}">
+			</div>
+
+			<div class="item text-center">
+				{{ user.championships }} times champion <img src="img/trophy.png" class="trophy" ng-if="user.championships"/>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
